@@ -1,0 +1,134 @@
+/******************************************************************
+   Common Styles Go Below. These effect elements common to each page
+*******************************************************************/
+/* Colours:
+    #e3e1e1 - body, nav and footer use this
+    #ffa500 - orange
+    #800080 - purple
+    #ffff00 - yellow
+    #008000 - green
+    black, white, red and blue - use the hex code for these
+    Use em or % for all sizing unless spefically told to use px
+*/
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-radius: 10%;
+   background-color: #f6f6f6;
+}
+img{
+   max-width: 20%;
+}
+h1{
+   text-align: center;
+}
+#wrapper{
+   text-align: center;
+}
+li.current{
+   color: #ffa500;
+}
+li{
+   display: inline;
+   margin-right: 0.5em;
+}
+ul{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 50px;
+   padding-right: 50px;
+   background-color:#e3e1e1;
+   list-style-type: none;
+}
+.box{
+   font-size: 2em;
+   height: 150px;
+   width: 150px;
+   margin: 1%; 
+   background-color: blue;
+   display: inline;
+   float: left;
+   position: relative;
+}
+
+.clear{
+   clear: both;
+}
+
+footer{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 50px;
+   padding-right: 50px;
+   background-color: #e3e1e1;
+}
+
+
+
+
+
+
+/**************************
+   Stacks Styles Below
+***************************/
+#stacks .box:nth-child(1){
+   background-color: red;
+   color: white;
+}
+#stacks .box:nth-child(2){
+   background-color: #ffff00;
+}
+#stacks .box:nth-child(3){
+   background-color: #008000;
+   color: white;
+}
+#stacks .box:nth-child(4){
+   background-color: #ffa500;;
+   color: white;
+}
+#stacks .box:not(:first-child){
+   margin-left: -50px;
+   position: relative;
+}
+
+
+
+
+
+
+/**************************
+   Table Styles Below
+***************************/
+table{
+   border: 2px solid black;
+   border-collapse: collapse;
+   width: 60%;
+   margin: auto;
+   margin-bottom: 20px;
+}
+tr, th, td{
+   border: 1px solid #0000ff;
+}
+th, td{
+   padding: 0.5em;
+}
+thead, tr{
+   text-align: left;
+}
+thead:hover, tfoot:hover{
+   background-color: red;
+}
+tbody tr:first-child:hover{
+   background-color: #000;
+   color: #fff;
+}
+tbody tr:not(:first-child):hover{
+   background-color: yellow;
+}
+tbody{
+   font-size: 0.9em;
+}
+tfoot tr td{
+   text-align: center;
+   padding: 2em;
+   font-size: 0.6em;
+}
